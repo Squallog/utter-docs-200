@@ -22,7 +22,7 @@
           hour = String(deltaDate.getHours()).padStart(2,"0"),
           minute = String(deltaDate.getMinutes()).padStart(2,"0"),
           second = String(deltaDate.getSeconds()).padStart(2, "0");
-        timer.text=`${hour}:${minute}:${second}`
+        timer.innerText=`${hour}:${minute}:${second}`;
       };
 
       setInterval( () => {
