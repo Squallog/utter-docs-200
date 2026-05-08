@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="./timerStyles.css"> -->
+  </head>
+  <body>
+    <main>
+      <h1 id="time"></h1>
+    </main>
     <script type="text/javascript" defer>
       const timer = document.getElementById("time"),
         start = new Date("2026-5-8T09:00:00"),
@@ -20,12 +25,9 @@
         timer.innerText=`${hour}:${minute}:${second}`
       };
 
-      setInterval( () => {tickTimer(timer, startTime)}, 1000);
+      setInterval( () => {
+        tickTimer(timer, startTime)
+      }, 1000);
     </script>
-  </head>
-  <body>
-    <main>
-      <h1 id="time"></h1>
-    </main>
   </body>
 </html>
